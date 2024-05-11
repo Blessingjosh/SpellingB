@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="spell.css">
+</head>
+
+<body>
+  <div class="all">
+    <img src="images/download 1.jpg" alt="">
+    <h1><span>SPELLING</span><span>BEE</span></h1>
+    <input type="text" id="inp">
+    <button id="btn">Generate a new word</button>
+    <div class="cont">
+      <button id="speak" class="btn2">Speak</button>
+      <button id="sub" class="btn2">Submit</button>
+    </div>
+    <button onclick="
+    score.correct =0;
+    score.incorrect = 0;
+    update()
+    " class="btn2">Start</button>
+    <p class="dec"></p>
+    <p class="score"></p>
+  </div>
+
+  <script src="spell.js"></script>
+</body>
+
+</html>

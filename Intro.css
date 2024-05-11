@@ -1,0 +1,27 @@
+.a{
+  border: 1px, solid;
+  border-radius: 100px;
+  margin: 70px 0px 10px 550px;
+  
+}
+.e{
+  margin: 0px 0px 10px 230px;
+  font-family:'Pacifico', cursive;
+  color: blue;
+}
+.f{
+  margin: 0px 0px 10px 490px;
+width: 300px;
+border: 2px solid;
+height: 30px;
+font-size: 20px;
+}
+.g{
+  margin: 0px 0px 10px 600px;
+width: 100px;
+height: 30px;
+font-size: 20px;
+color: blue;
+background-color: white;
+border-radius: 10px;
+}
