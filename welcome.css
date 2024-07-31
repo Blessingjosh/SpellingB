@@ -4,7 +4,7 @@ body {
     background: #313E50;
   }
   .a{
-    color: white;
+    color: rgb(255, 119, 0);
     font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -70,4 +70,22 @@ body {
 .button-30:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
+}
+.e{
+    display: none;
+}
+.f{
+    display: block;
+}
+.g{
+    color: white;
+    font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 9px;
+  font-size: 20px; 
+}
+.h{
+    font-size: 20px;
+    color: white;
 }
