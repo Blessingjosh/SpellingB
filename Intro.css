@@ -1,27 +1,104 @@
-.a{
-  border: 1px, solid;
-  border-radius: 100px;
-  margin: 70px 0px 10px 550px;
+
+body {
+  position: relative;
+  background: #15156d;
   
 }
-.e{
-  margin: 0px 0px 10px 230px;
-  font-family:'Pacifico', cursive;
-  color: blue;
+.container {
+  padding: 200px;
 }
-.f{
-  margin: 0px 0px 10px 490px;
-width: 300px;
-border: 2px solid;
-height: 30px;
-font-size: 20px;
+.circle {
+    height: 25px;
+    width: 25px;
+    background-color: aqua;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    transition: all 1.5s ease-in-out;
+    transform-origin:left;
 }
-.g{
-  margin: 0px 0px 10px 600px;
-width: 100px;
-height: 30px;
-font-size: 20px;
-color: blue;
-background-color: white;
-border-radius: 10px;
+.circlesmall {
+    height: 15px;
+    width: 15px;
+    background-color: aqua;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    transition: all 1s ease-in-out;
+    transform-origin: right;
+}
+
+
+@import  url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Montserrat;
+  background: #313E50;
+}
+
+.text-input{
+  
+  position: relative;
+  margin-top: -300px;
+  
+  input[type="text"]{
+    display: inline-block;
+    width: 500px;
+    height: 40px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 10px 10px 10px 100px;
+    transition: all 0.1s ease-out;
+  }
+  
+  input[type="text"] + label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    border-radius: 3px 0 0 3px;
+    padding: 0 20px;
+    background: rgb(255, 119, 0);
+    transform: translateZ(0) translateX(0);
+    transition: all 0.3s ease-in;
+    transition-delay: 0.2s;
+  }
+  
+  input[type="text"]:focus + label{
+    transform: translateY(-120%) translateX(0%);
+    border-radius: 3px;
+    transition: all 0.1s ease-out;
+  }
+  
+  input[type="text"]:focus{
+    padding: 10px;
+    transition: all 0.3s ease-out;
+    transition-delay: 0.2s;
+  }
+  input[type="button"]{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 10px 10px ;
+    transition: all 0.1s ease-out;
+    background: rgb(255, 119, 0);
+  }
 }
