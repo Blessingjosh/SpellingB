@@ -39,7 +39,14 @@ setInterval(randomsmaller, 1000);
   function fun(){
     window.location.href = "welcome.html"
     var r =  document.getElementById('input1').value
+    document.getElementById('input1').value = " "
 var k=document.getElementById('demo').innerHTML = r
     localStorage.setItem('myvalue', k)
   }
+  function pressKey(event) {
+  console.log(event.key)
+  if (event.key === 'Enter') {
+    fun()
+  }
+}
  

@@ -5,13 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="spell.css">
+  <link rel="stylesheet" href="ind.css">
 </head>
 
 <body>
-  <div class="all">
+  <div class="head">
+  
+    <h1 onclick="button1()"  id ="z">1</h1>
+    
+  
+    <div class="all">
     <img src="images/download 1.jpg" alt="">
-    <h1><span>SPELLING</span><span>BEE</span></h1>
+      <h1><span>SPELLING</span><span>BEE</span></h1>
+    </div>
+  
+     <h1 class = "finalScore">0/10</h1>
+     <p id="countdown">10:00</p>
+     </div>
+  <div class="all">
+    
+    
     <input type="text" id="inp">
     <button id="btn">Generate a new word</button>
     <div class="cont">
@@ -26,8 +39,11 @@
     <p class="dec"></p>
     <p class="score"></p>
   </div>
+  <div class="final">
+    <button onclick="enter()">Submit</button>
+  </div>
 
-  <script src="spell.js"></script>
+  <script src="ind.js"></script>
 </body>
 
 </html>
