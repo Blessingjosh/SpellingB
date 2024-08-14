@@ -70,19 +70,16 @@ function enter(){
 
 }
 
+var count = 15;
+var interval = setInterval(function(){
+  document.getElementById('count').innerHTML=count;
+  count--;
+  if (count === 0){
+    clearInterval(interval);
+    document.getElementById('count').innerHTML='Done';
+    // or...
+    alert("You're out of time!");
+    window.open('gameover.html', '_self')
 
-var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
-var x = setInterval(function() {
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
-  var minutes = Math.floor((distance % (1000 * 60 * 2)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  document.getElementById("demo").innerHTML = 
-  minutes + "m " + seconds + "s ";
-  if (distance < 0) {
-    clearInterval(x);
-    // document.getElementById("demo").innerHTML = "EXPIRED";
-    // window.open('gameover.html', '_self')
-    console.log('Expired')
   }
 }, 1000);
