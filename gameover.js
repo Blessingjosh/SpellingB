@@ -4,3 +4,9 @@ setTimeout(function(){
 
     var yes = localStorage.getItem('myvalue')
 document.getElementById('no').innerHTML= yes
+
+var ok = localStorage.getItem('my')
+document.getElementById('yes').innerHTML= ok
+
+var up = localStorage.getItem('mylife')
+document.getElementById('down').innerHTML= up

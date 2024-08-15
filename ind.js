@@ -43,11 +43,22 @@ document.getElementById('speak').addEventListener('click', function () {
     incorrect: 0
 }
 function up() {
-  // let score = ''
+  let sock = 
   document.querySelector('.finalScore')
     .innerHTML = `${score.correct} /10`
+    localStorage.setItem('my', sock)
     
+    eat()
 }
+function eat(){
+  if(score.correct=1){
+let t =document.getElementById('r').innerHTML="PASS"
+localStorage.setItem('mylife', t)
+
+  }
+
+}
+
 var x = 0;
 document.getElementById('z').innerHTML = x;
 function button1() {
@@ -70,7 +81,7 @@ function enter(){
 
 }
 
-var count = 15;
+var count = 60;
 var interval = setInterval(function(){
   document.getElementById('count').innerHTML=count;
   count--;
