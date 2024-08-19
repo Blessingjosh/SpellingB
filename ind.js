@@ -47,14 +47,18 @@ function up() {
   document.querySelector('.finalScore')
     .innerHTML = `${score.correct} /10`
     localStorage.setItem('my', sock)
-    
     eat()
 }
+up()
 function eat(){
-  if(score.correct=1){
+  if(score.correct>1){
 let t =document.getElementById('r').innerHTML="PASS"
 localStorage.setItem('mylife', t)
 
+  }else{
+let he =document.getElementById('r').innerHTML="FAIL"
+localStorage.setItem('mylife', he)
+    
   }
 
 }
@@ -77,7 +81,7 @@ function update(){
   .innerHTML = `Correct:${score.correct}, Incorrect:${score.incorrect}`
 }
 function enter(){
-  window.open("score.html", "_self")
+  window.open("gameover.html", "_self")
 
 }
 
