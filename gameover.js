@@ -10,3 +10,7 @@ document.getElementById('yes').innerHTML= ok
 
 var up = localStorage.getItem('mylife')
 document.getElementById('down').innerHTML= up
+function result(){
+    window.open("result.html", "_self")
+
+}

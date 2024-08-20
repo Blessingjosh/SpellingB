@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&display=swap');
+
 body {
   background: #313E50;
 
-  
+
 }
 
 .stop h1 {
@@ -12,7 +13,8 @@ body {
   font-family: "Anton", sans-serif;
   letter-spacing: 10px;
   font-size: 50px;
-  color: rgb(255, 119, 0);;
+  color: rgb(255, 119, 0);
+  ;
   margin: auto;
   background-color: aqua;
   min-width: 20%;
@@ -32,13 +34,15 @@ body {
   font-size: 34px;
   text-align: center;
 }
-.n{
+
+.n {
   box-sizing: border-box;
   align-items: center;
   font-size: 34px;
   text-align: center;
 }
-.o{
+
+.o {
   box-sizing: border-box;
   align-items: center;
   font-size: 34px;
@@ -66,4 +70,10 @@ body {
 
 #yes {
   color: red;
+}
+
+.y {
+  text-align: right;
+  color: #eee;
+  cursor: pointer;
 }
