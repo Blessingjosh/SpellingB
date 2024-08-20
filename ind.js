@@ -23,21 +23,29 @@ document.getElementById('sub').addEventListener('click', function () {
       .innerHTML = 'Incorrect'
     score.incorrect += 1
 
-    alert(`INCORRECT \n It was ${word}
+    alert(`INCORRECT \n It is ${word}
       Correct:${score.correct}, Incorrect:${score.incorrect}`)
   }
   document.getElementById('inp').value = ''
 
   up()
   update()
+  show()
 
 })
+
+
 document.getElementById('speak').addEventListener('click', function () {
 
   let voice = new SpeechSynthesisUtterance()
   voice.text = word
   speechSynthesis.speak(voice)
 })
+function show(){
+  let j =document.getElementById('dee').innerHTML += word + '<br/>'
+  localStorage.setItem('eee', j)
+
+  }
   const score = {
     correct: 0,
     incorrect: 0
