@@ -2,8 +2,6 @@ let word;
 const words = ["Leviticus", "Uzziah", "Deuteronomy", "Chronicles", "Philemon", "Corinthians", "Revelation", "Ecclesiastes", "Colossians", "Zephaniah", "Zechariah", "Timothy", "Jehoiakim", "Hoshea", "Jeroboam", "Manasseh", "Nadab", "Zachariah", "Rehoboam", "Uzziah", "Jehoshaphat", "Omri", "Jehoahaz", "Pekahiah", "Jotham", "Zedekiah", "Jehoiachin", "Bathsheba", "Jehoaddan", "Mehetabel", "Michaiah", "Vashti", "Jerusha", "Naamah", "Jecoliah", "Jehoaddan", "Jezebel", "Nehushta", "Tahpenes", "Esther", "Azubah", "Antelope", "Behemoth", "Buzzard", "Camel", "Chameleon", "Cormorant", "Cricket", "Crane", "Gazelle", "Gecko", "Leviticus", "Grasshopper", "Heron", "Hoopoe", "Hyena", "Leech", "Leopard", "Leviathan", "Maggot", "Ostrich", "Partridge", "Peacock", "Pigeon", "Quail ", "Raven", "Scorpion", "Sparrow", "Turtledove", "Worm", "Heron", "Viper", "Abanah", "Euphrates", "Gihon", "Habor", "Jordan", "Kishon", "Pharpar", "Pishon", "Shihor", "Tigris", "Ulai", "Othniel", "Ehud", "Shamgar", "Deborah", "Gideon", "Abimelech", "Jephthah", "Ibzan ", "Elon", "Abdon", "Samson", "Eli ", "Reuben", "Simeon", "Ephraim", "Judah", "Issachar", "Zebulun", "Dan", "Naphtali", "Gad", "Asher", "Manasseh", "Benjamin", "Gad", "Gad", "Gad", "Gad", "Gad", "Gad"]
 document.getElementById('btn').addEventListener('click', function () {
 button1()
-
-
   num = Math.floor(Math.random() * (103))
   word = words[num]
   let voice = new SpeechSynthesisUtterance()
@@ -11,17 +9,25 @@ button1()
   speechSynthesis.speak(voice)
 })
 document.getElementById('sub').addEventListener('click', function () {
-  if (document.getElementById('inp').value == word) {
+  
+  let s = document.getElementById('inp').value
+  if ( s== word) {
     document.querySelector('.dec')
       .innerHTML = "Correct"
     score.correct += 1
     alert(`CORRECT!!! 
     Correct:${score.correct}, Incorrect:${score.incorrect}`)
-    
+    console.log(s)
+    let m =document.getElementById('de').innerHTML  +=  s  + '<br/>'
+  localStorage.setItem('wrong', m)
+
   } else {
     document.querySelector('.dec')
       .innerHTML = 'Incorrect'
     score.incorrect += 1
+    console.log(s)
+       let m =document.getElementById('de').innerHTML  +=  s  + '<br/>'
+  localStorage.setItem('wrong', m)
 
     alert(`INCORRECT \n It is ${word}
       Correct:${score.correct}, Incorrect:${score.incorrect}`)
@@ -33,8 +39,6 @@ document.getElementById('sub').addEventListener('click', function () {
   show()
 
 })
-
-
 document.getElementById('speak').addEventListener('click', function () {
 
   let voice = new SpeechSynthesisUtterance()
@@ -42,9 +46,11 @@ document.getElementById('speak').addEventListener('click', function () {
   speechSynthesis.speak(voice)
 })
 function show(){
-  let j =document.getElementById('dee').innerHTML += word + '<br/>'
-  localStorage.setItem('eee', j)
+    let j =document.getElementById('dee').innerHTML  +=  word  + '<br/>'
+    // let m =document.getElementById('de').innerHTML  +=  s  + '<br/>'
 
+  localStorage.setItem('eee', j)
+  
   }
   const score = {
     correct: 0,
@@ -70,7 +76,6 @@ localStorage.setItem('mylife', he)
   }
 
 }
-
 var x = 0;
 document.getElementById('z').innerHTML = x;
 function button1() {
@@ -82,7 +87,6 @@ function button1() {
     // speechSynthesis.speak(voice)
   }
 }
-
 update()
 function update(){
   document.querySelector('.score')
@@ -90,9 +94,7 @@ function update(){
 }
 function enter(){
   window.open("gameover.html", "_self")
-
 }
-
 var count = 60;
 var interval = setInterval(function(){
   document.getElementById('count').innerHTML=count;
