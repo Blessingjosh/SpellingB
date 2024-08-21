@@ -25,7 +25,7 @@ document.getElementById('sub').addEventListener('click', function () {
     document.querySelector('.dec')
       .innerHTML = 'Incorrect'
     score.incorrect += 1
-    console.log(s)
+    
        let m =document.getElementById('de').innerHTML  +=  s  + '<br/>'
   localStorage.setItem('wrong', m)
 
@@ -45,9 +45,11 @@ document.getElementById('speak').addEventListener('click', function () {
   voice.text = word
   speechSynthesis.speak(voice)
 })
+var ne = 0;
 function show(){
-    let j =document.getElementById('dee').innerHTML  +=  word  + '<br/>'
-    // let m =document.getElementById('de').innerHTML  +=  s  + '<br/>'
+  let jet  = ++ne;
+    let j =document.getElementById('dee').innerHTML  += jet + " ." + word  + '<br/>'
+    
 
   localStorage.setItem('eee', j)
   
