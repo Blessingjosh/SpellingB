@@ -1,5 +1,5 @@
-var what = localStorage.getItem('eee')
+var what = localStorage.getItem('wrong')
 document.getElementById('a').innerHTML= what
 
-var wha = localStorage.getItem('wrong')
+var wha = localStorage.getItem('eee')
 document.getElementById('b').innerHTML= wha
