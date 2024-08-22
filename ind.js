@@ -31,7 +31,6 @@ document.getElementById('sub').addEventListener('click', function () {
   }
   document.getElementById('inp').value = ''
   let m =document.getElementById('de').innerHTML  += jet + " ." +  s  + '<br/>'
-  console.log(jet)
   localStorage.setItem('wrong', m)
   up()
   update()
