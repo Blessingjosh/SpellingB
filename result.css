@@ -1,6 +1,20 @@
+
 #a{
     color: green;
 }
 .k{
     display: flex;
 }
+.bee{
+    color: rgb(255, 119, 0);
+    
+  }
+  .all{
+    display:grid;
+    font-size: 10px;
+    place-items: center;
+    margin-top: 20px;
+  }
+  .v{
+    width: 80px;
+  }

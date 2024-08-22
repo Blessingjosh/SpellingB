@@ -8,32 +8,37 @@ button1()
   voice.text = word
   speechSynthesis.speak(voice)
 })
+var ne = 0;
 document.getElementById('sub').addEventListener('click', function () {
   
+  let jet  = ++ne;
   let s = document.getElementById('inp').value
   if ( s== word) {
+  
     document.querySelector('.dec')
       .innerHTML = "Correct"
     score.correct += 1
     alert(`CORRECT!!! 
     Correct:${score.correct}, Incorrect:${score.incorrect}`)
     console.log(s)
-    let m =document.getElementById('de').innerHTML  +=  s  + '<br/>'
-  localStorage.setItem('wrong', m)
+  
 
   } else {
     document.querySelector('.dec')
       .innerHTML = 'Incorrect'
     score.incorrect += 1
     
-       let m =document.getElementById('de').innerHTML  +=  s  + '<br/>'
-  localStorage.setItem('wrong', m)
+  
 
     alert(`INCORRECT \n It is ${word}
       Correct:${score.correct}, Incorrect:${score.incorrect}`)
   }
   document.getElementById('inp').value = ''
-
+  // document.write(je)
+  
+  let m =document.getElementById('de').innerHTML  += jet + " ." +  s  + '<br/>'
+  console.log(jet)
+  localStorage.setItem('wrong', m)
   up()
   update()
   show()
@@ -45,10 +50,10 @@ document.getElementById('speak').addEventListener('click', function () {
   voice.text = word
   speechSynthesis.speak(voice)
 })
-var ne = 0;
+// var ne = 0;
 function show(){
-  let jet  = ++ne;
-    let j =document.getElementById('dee').innerHTML  += jet + " ." + word  + '<br/>'
+  // let jet  = ++ne;
+    let j =document.getElementById('dee').innerHTML  +=  word  + '<br/>'
     
 
   localStorage.setItem('eee', j)
