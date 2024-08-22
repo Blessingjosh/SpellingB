@@ -21,21 +21,15 @@ document.getElementById('sub').addEventListener('click', function () {
     alert(`CORRECT!!! 
     Correct:${score.correct}, Incorrect:${score.incorrect}`)
     console.log(s)
-  
-
   } else {
     document.querySelector('.dec')
       .innerHTML = 'Incorrect'
     score.incorrect += 1
-    
   
-
     alert(`INCORRECT \n It is ${word}
       Correct:${score.correct}, Incorrect:${score.incorrect}`)
   }
   document.getElementById('inp').value = ''
-  // document.write(je)
-  
   let m =document.getElementById('de').innerHTML  += jet + " ." +  s  + '<br/>'
   console.log(jet)
   localStorage.setItem('wrong', m)
@@ -50,12 +44,10 @@ document.getElementById('speak').addEventListener('click', function () {
   voice.text = word
   speechSynthesis.speak(voice)
 })
-// var ne = 0;
-function show(){
-  // let jet  = ++ne;
-    let j =document.getElementById('dee').innerHTML  +=  word  + '<br/>'
-    
 
+function show(){
+  
+    let j =document.getElementById('dee').innerHTML  +=  word  + '<br/>'
   localStorage.setItem('eee', j)
   
   }
@@ -79,7 +71,6 @@ localStorage.setItem('mylife', t)
   }else{
 let he =document.getElementById('r').innerHTML="FAIL"
 localStorage.setItem('mylife', he)
-    
   }
 
 }
