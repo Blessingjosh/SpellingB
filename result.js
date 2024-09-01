@@ -3,3 +3,6 @@ document.getElementById('a').innerHTML= what
 
 var wha = localStorage.getItem('eee')
 document.getElementById('b').innerHTML= wha
+if(s==word){
+    console.log(yes)
+}
