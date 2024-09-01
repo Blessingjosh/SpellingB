@@ -77,3 +77,14 @@ background-color: aqua;
   flex-direction: row;
 }
 
+#dee{
+  display: none;
+}
+
+
+.list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+}
